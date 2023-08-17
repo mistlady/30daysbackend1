@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;1,200&family=Poppins:ital,wght@0,300;0,400;1,500;1,600&family=Roboto+Slab:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    padding-left: 100px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr) ;
+    grid-template-rows: repeat(2,1fr);
+    height: 80vh;
+    width: 70%;
+    margin: 20px;
+}
+
+body{
+    font-family: "karla";
+    line-height: 26px;
+    font-size: 16px;
+}
+.top-text{
+    border: 1px solid white;
+    font-weight: 700;    
+    grid-column-start: span 2;
+    height: 80px;
+}
+.top-text h2 {
+    color: hsl(71, 73%, 54%);
+    padding-bottom: 10px;
+}
+.top-text h3 {
+    color: hsl(71, 73%, 54%);
+}
+.top-text p{
+    color: hsl(218, 22%, 67%);
+}
+.left-text{
+    border: 1px solid white;
+    padding: 20px;
+    grid-column-start: span 1;
+    background-color: hsl(179,61%,44%);
+    color: white;
+    
+    line-height: 30px;
+}
+button{
+    border: 1px solid hsl(71, 73%, 54%);
+    border-radius: 10px;
+    background-color: hsl(71, 73%, 54%);
+    padding: 10px 60px 10px 60px;
+    position: absolute;
+    left: 180px;
+    box-shadow: 20px 20px 50px grey;
+    cursor: pointer;
+    color: white;
+}
+#big{
+    font-size: 28px;
+}
+#color{
+    color: lightgray;
+}
+.right-text{
+    border: 1px solid white;
+    padding: 20px;
+    grid-column-start: span 1;
+    background-color: hsl(179,47%,52%);
+    color: white;
+    height: auto;
+    
+}
+
+
+ @media (max-width:786px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        font-size: 14px;
+        height: 100vh;
+        padding: 0;
+        margin-left: 50px;
+    }
+    .top-text{
+        grid-column-start: span 1;
+    }
+    .left-text{
+        grid-column-start: span 1;
+    }
+    .right-text{
+        grid-column-start: span 1;
+    }
+    button{
+        left: 100px;
+    }
+ }
+
+
+
+
+
